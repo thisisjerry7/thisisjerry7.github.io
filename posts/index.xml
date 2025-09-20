@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>jerryyy</title>
-    <link>https://thisisjerry7.github.io/</link>
-    <description>Recent content on jerryyy</description>
+    <title>Posts on jerryyy</title>
+    <link>https://thisisjerry7.github.io/posts/</link>
+    <description>Recent content in Posts on jerryyy</description>
     <image>
       <title>jerryyy</title>
       <url>https://thisisjerry7.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.150.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Sep 2025 10:09:05 +0800</lastBuildDate>
-    <atom:link href="https://thisisjerry7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thisisjerry7.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我如何建立這個網站的</title>
       <link>https://thisisjerry7.github.io/posts/how-i-built-this-website/</link>
@@ -177,14 +177,6 @@ markup:
       <pubDate>Sat, 20 Sep 2025 10:06:14 +0800</pubDate>
       <guid>https://thisisjerry7.github.io/posts/first-post/</guid>
       <description>&lt;p&gt;這是我的第一篇貼文，紀念一下～～～&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://thisisjerry7.github.io/use/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://thisisjerry7.github.io/use/</guid>
-      <description>&lt;h1 id=&#34;這裡之後會整理出我愛用的東西&#34;&gt;這裡之後會整理出我愛用的東西&lt;/h1&gt;
-&lt;p&gt;可以先參考&lt;a href=&#34;https://wiwi.blog/use&#34;&gt;Wiwi&lt;/a&gt;的&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
