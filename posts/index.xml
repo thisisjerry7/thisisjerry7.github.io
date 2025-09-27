@@ -1,18 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on jerryyy</title>
+    <title>Posts on Jerryyy</title>
     <link>https://thisisjerry7.github.io/posts/</link>
-    <description>Recent content in Posts on jerryyy</description>
+    <description>Recent content in Posts on Jerryyy</description>
     <image>
-      <title>jerryyy</title>
+      <title>Jerryyy</title>
       <url>https://thisisjerry7.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://thisisjerry7.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.150.0</generator>
+    <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Sep 2025 10:09:05 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Sep 2025 19:22:12 +0800</lastBuildDate>
     <atom:link href="https://thisisjerry7.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快下載吧！</title>
+      <link>https://thisisjerry7.github.io/posts/download-it/</link>
+      <pubDate>Sat, 27 Sep 2025 19:22:12 +0800</pubDate>
+      <guid>https://thisisjerry7.github.io/posts/download-it/</guid>
+      <description>&lt;p&gt;昨天晚上我用 &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;yt-dlp&lt;/a&gt; 下載影片的時候還一切正常，今天早上執行的時候一直遇到 &lt;code&gt;403 Forbidden&lt;/code&gt;，我想說前幾天不是才更新過嗎？多試幾次之後還是不能下載，我再執行一次更新，才發現昨天 yt-dlp 竟然釋出&lt;a href=&#34;https://github.com/yt-dlp/yt-dlp/releases&#34;&gt;新版本&lt;/a&gt;了，下載之後就恢復正常了，沒想到他們的更新速度會那麼快。&lt;/p&gt;
+&lt;p&gt;有喜歡的內容就下載下來吧！說不定那一天突然就沒辦法存取了。&lt;/p&gt;
+&lt;p&gt;我有很多喜歡的內容在 Youtube 上，但是，我知道網路上的服務不一定會永遠存在，所以我開始&lt;a href=&#34;https://wiwi.blog/blog/just-download-it/&#34;&gt;下載&lt;/a&gt;我喜歡的影片，並且把它們放到我的硬碟裡，這樣就算沒有網路，我也可以隨時看這些影片了，&lt;a href=&#34;https://wiwi.blog/blog/why-streaming/&#34;&gt;音樂&lt;/a&gt;也是一樣，我會把他們下載下來並且放到手機裡，在我通勤的時候聽。&lt;/p&gt;
+&lt;h2 id=&#34;分享我的指令&#34;&gt;分享我的指令&lt;/h2&gt;
+&lt;p&gt;之前因為被拒絕存取，我以我加上了 &lt;code&gt;--user-agent&lt;/code&gt;，順便優化一下，讓我能用最好的格式保存影片。&lt;/p&gt;
+&lt;p&gt;下載 Youtube 影片&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yt-dlp --download-archive archive.txt -f bestvideo+bestaudio --remux-video mkv --all-subs --embed-subs --sub-format &amp;#34;ass/srt/best&amp;#34; --add-metadata --write-thumbnail --embed-thumbnail --user-agent &amp;#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0&amp;#34; --sleep-interval 5 --max-sleep-interval 20 &amp;#34;你要下載的 YouTube 影片連結&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;參數&lt;/th&gt;
+          &lt;th&gt;功能&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--download-archive archive.txt&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;用文字檔紀錄已下載的影片，避免重複下載&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;-f bestvideo+bestaudio&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;下載最佳影片和最佳音訊，分開抓再合併&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--remux-video mkv&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;不重新壓縮，直接封裝成 MKV&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--all-subs&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;下載所有字幕&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--embed-subs&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;把字幕嵌入影片檔案&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--sub-format &amp;quot;ass/srt/best&amp;quot;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;優先下載 ass → srt → 其他&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--add-metadata&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;寫入標題、上傳者、上傳日期等 metadata&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--write-thumbnail&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;下載縮圖&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--embed-thumbnail&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;把縮圖嵌入檔案&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--user-agent ...&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;模擬 Firefox UA，避免被擋，增加穩定性&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;--sleep-interval 5 --max-sleep-interval 20&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;每次下載間隙隨機等待 5–20 秒，避免被 Youtube 暫時封鎖&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;下載 Youtube music&lt;/p&gt;</description>
+    </item>
     <item>
       <title>我如何建立這個網站的</title>
       <link>https://thisisjerry7.github.io/posts/how-i-built-this-website/</link>
@@ -169,7 +237,7 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以下是我修改過的&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以自己修改裡面的配置&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Post</title>

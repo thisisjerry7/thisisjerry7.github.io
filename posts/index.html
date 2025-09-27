@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | jerryyy</title>
+<title>Posts | Jerryyy</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - jerryyy">
+<meta name="description" content="Posts - Jerryyy">
 <meta name="author" content="Me">
 <link rel="canonical" href="https://thisisjerry7.github.io/posts/">
 <meta name="google-site-verification" content="XYZabc">
@@ -60,7 +60,7 @@
 
     </style>
 </noscript><meta property="og:url" content="https://thisisjerry7.github.io/posts/">
-  <meta property="og:site_name" content="jerryyy">
+  <meta property="og:site_name" content="Jerryyy">
   <meta property="og:title" content="Posts">
   <meta property="og:description" content="ExampleSite description">
   <meta property="og:locale" content="en">
@@ -131,8 +131,8 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://thisisjerry7.github.io/categories/" title="categories">
-                    <span>categories</span>
+                <a href="https://thisisjerry7.github.io/about/" title="關於我">
+                    <span>關於我</span>
                 </a>
             </li>
             <li>
@@ -165,6 +165,24 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">快下載吧！
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天晚上我用 yt-dlp 下載影片的時候還一切正常，今天早上執行的時候一直遇到 403 Forbidden，我想說前幾天不是才更新過嗎？多試幾次之後還是不能下載，我再執行一次更新，才發現昨天 yt-dlp 竟然釋出新版本了，下載之後就恢復正常了，沒想到他們的更新速度會那麼快。
+有喜歡的內容就下載下來吧！說不定那一天突然就沒辦法存取了。
+我有很多喜歡的內容在 Youtube 上，但是，我知道網路上的服務不一定會永遠存在，所以我開始下載我喜歡的影片，並且把它們放到我的硬碟裡，這樣就算沒有網路，我也可以隨時看這些影片了，音樂也是一樣，我會把他們下載下來並且放到手機裡，在我通勤的時候聽。
+分享我的指令 之前因為被拒絕存取，我以我加上了 --user-agent，順便優化一下，讓我能用最好的格式保存影片。
+下載 Youtube 影片
+yt-dlp --download-archive archive.txt -f bestvideo&#43;bestaudio --remux-video mkv --all-subs --embed-subs --sub-format &#34;ass/srt/best&#34; --add-metadata --write-thumbnail --embed-thumbnail --user-agent &#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0&#34; --sleep-interval 5 --max-sleep-interval 20 &#34;你要下載的 YouTube 影片連結&#34; 參數 功能 --download-archive archive.txt 用文字檔紀錄已下載的影片，避免重複下載 -f bestvideo&#43;bestaudio 下載最佳影片和最佳音訊，分開抓再合併 --remux-video mkv 不重新壓縮，直接封裝成 MKV --all-subs 下載所有字幕 --embed-subs 把字幕嵌入影片檔案 --sub-format &#34;ass/srt/best&#34; 優先下載 ass → srt → 其他 --add-metadata 寫入標題、上傳者、上傳日期等 metadata --write-thumbnail 下載縮圖 --embed-thumbnail 把縮圖嵌入檔案 --user-agent ... 模擬 Firefox UA，避免被擋，增加穩定性 --sleep-interval 5 --max-sleep-interval 20 每次下載間隙隨機等待 5–20 秒，避免被 Youtube 暫時封鎖 下載 Youtube music
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-09-27 19:22:12 +0800 CST'>September 27, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;142 words&nbsp;·&nbsp;Me</footer>
+  <a class="entry-link" aria-label="post link to 快下載吧！" href="https://thisisjerry7.github.io/posts/download-it/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">我如何建立這個網站的
     </h2>
   </header>
@@ -175,10 +193,10 @@
 hugo new site jerryyy --format yaml 進入 jerryyy 資料夾
 cd jerryyy/ 初始化 git 並且下載想要的 theme，我用的 theme 是 PaperMod，官方文檔在這裡。
 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 將 “theme: PaperMod” 加入 hugo.yaml，創建 “config.yml” 在 theme/PaperMod 資料夾裡，並且在 config.yml 中寫入以下容（這來自官方文檔）
-baseURL: &#34;https://thisisjerry7.github.io/&#34; title: ExampleSite paginate: 5 theme: PaperMod enableRobotsTXT: true buildDrafts: false buildFuture: false buildExpired: false googleAnalytics: UA-123-45 minify: disableXML: true minifyOutput: true params: env: production # to enable google analytics, opengraph, twitter-cards and schema. title: ExampleSite description: &#34;ExampleSite description&#34; keywords: [Blog, Portfolio, PaperMod] author: Me # author: [&#34;Me&#34;, &#34;You&#34;] # multiple authors images: [&#34;&lt;link or path of image for opengraph, twitter-cards&gt;&#34;] DateFormat: &#34;January 2, 2006&#34; defaultTheme: auto # dark, light disableThemeToggle: false ShowReadingTime: true ShowShareButtons: true ShowPostNavLinks: true ShowBreadCrumbs: true ShowCodeCopyButtons: false ShowWordCount: true ShowRssButtonInSectionTermList: true UseHugoToc: true disableSpecial1stPost: false disableScrollToTop: false comments: false hidemeta: false hideSummary: false showtoc: false tocopen: false assets: # disableHLJS: true # to disable highlight.js # disableFingerprinting: true favicon: &#34;&lt;link / abs url&gt;&#34; favicon16x16: &#34;&lt;link / abs url&gt;&#34; favicon32x32: &#34;&lt;link / abs url&gt;&#34; apple_touch_icon: &#34;&lt;link / abs url&gt;&#34; safari_pinned_tab: &#34;&lt;link / abs url&gt;&#34; label: text: &#34;Home&#34; icon: /apple-touch-icon.png iconHeight: 35 # profile-mode profileMode: enabled: false # needs to be explicitly set title: ExampleSite subtitle: &#34;This is subtitle&#34; imageUrl: &#34;&lt;img location&gt;&#34; imageWidth: 120 imageHeight: 120 imageTitle: my image buttons: - name: Posts url: posts - name: Tags url: tags # home-info mode homeInfoParams: Title: &#34;Hi there \U0001F44B&#34; Content: Welcome to my blog socialIcons: - name: x url: &#34;https://x.com/&#34; - name: stackoverflow url: &#34;https://stackoverflow.com&#34; - name: github url: &#34;https://github.com/&#34; analytics: google: SiteVerificationTag: &#34;XYZabc&#34; bing: SiteVerificationTag: &#34;XYZabc&#34; yandex: SiteVerificationTag: &#34;XYZabc&#34; cover: hidden: true # hide everywhere but not in structured data hiddenInList: true # hide on list pages and home hiddenInSingle: true # hide on single page editPost: URL: &#34;https://github.com/&lt;path_to_repo&gt;/content&#34; Text: &#34;Suggest Changes&#34; # edit text appendFilePath: true # to append file path to Edit link # for search # https://fusejs.io/api/options.html fuseOpts: isCaseSensitive: false shouldSort: true location: 0 distance: 1000 threshold: 0.4 minMatchCharLength: 0 limit: 10 # refer: https://www.fusejs.io/api/methods.html#search keys: [&#34;title&#34;, &#34;permalink&#34;, &#34;summary&#34;, &#34;content&#34;] menu: main: - identifier: categories name: categories url: /categories/ weight: 10 - identifier: tags name: tags url: /tags/ weight: 20 - identifier: example name: example.org url: https://example.org weight: 30 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma pygmentsUseClasses: true markup: highlight: noClasses: false # anchorLineNos: true # codeFences: true # guessSyntax: true # lineNos: true # style: monokai 以下是我修改過的
+baseURL: &#34;https://thisisjerry7.github.io/&#34; title: ExampleSite paginate: 5 theme: PaperMod enableRobotsTXT: true buildDrafts: false buildFuture: false buildExpired: false googleAnalytics: UA-123-45 minify: disableXML: true minifyOutput: true params: env: production # to enable google analytics, opengraph, twitter-cards and schema. title: ExampleSite description: &#34;ExampleSite description&#34; keywords: [Blog, Portfolio, PaperMod] author: Me # author: [&#34;Me&#34;, &#34;You&#34;] # multiple authors images: [&#34;&lt;link or path of image for opengraph, twitter-cards&gt;&#34;] DateFormat: &#34;January 2, 2006&#34; defaultTheme: auto # dark, light disableThemeToggle: false ShowReadingTime: true ShowShareButtons: true ShowPostNavLinks: true ShowBreadCrumbs: true ShowCodeCopyButtons: false ShowWordCount: true ShowRssButtonInSectionTermList: true UseHugoToc: true disableSpecial1stPost: false disableScrollToTop: false comments: false hidemeta: false hideSummary: false showtoc: false tocopen: false assets: # disableHLJS: true # to disable highlight.js # disableFingerprinting: true favicon: &#34;&lt;link / abs url&gt;&#34; favicon16x16: &#34;&lt;link / abs url&gt;&#34; favicon32x32: &#34;&lt;link / abs url&gt;&#34; apple_touch_icon: &#34;&lt;link / abs url&gt;&#34; safari_pinned_tab: &#34;&lt;link / abs url&gt;&#34; label: text: &#34;Home&#34; icon: /apple-touch-icon.png iconHeight: 35 # profile-mode profileMode: enabled: false # needs to be explicitly set title: ExampleSite subtitle: &#34;This is subtitle&#34; imageUrl: &#34;&lt;img location&gt;&#34; imageWidth: 120 imageHeight: 120 imageTitle: my image buttons: - name: Posts url: posts - name: Tags url: tags # home-info mode homeInfoParams: Title: &#34;Hi there \U0001F44B&#34; Content: Welcome to my blog socialIcons: - name: x url: &#34;https://x.com/&#34; - name: stackoverflow url: &#34;https://stackoverflow.com&#34; - name: github url: &#34;https://github.com/&#34; analytics: google: SiteVerificationTag: &#34;XYZabc&#34; bing: SiteVerificationTag: &#34;XYZabc&#34; yandex: SiteVerificationTag: &#34;XYZabc&#34; cover: hidden: true # hide everywhere but not in structured data hiddenInList: true # hide on list pages and home hiddenInSingle: true # hide on single page editPost: URL: &#34;https://github.com/&lt;path_to_repo&gt;/content&#34; Text: &#34;Suggest Changes&#34; # edit text appendFilePath: true # to append file path to Edit link # for search # https://fusejs.io/api/options.html fuseOpts: isCaseSensitive: false shouldSort: true location: 0 distance: 1000 threshold: 0.4 minMatchCharLength: 0 limit: 10 # refer: https://www.fusejs.io/api/methods.html#search keys: [&#34;title&#34;, &#34;permalink&#34;, &#34;summary&#34;, &#34;content&#34;] menu: main: - identifier: categories name: categories url: /categories/ weight: 10 - identifier: tags name: tags url: /tags/ weight: 20 - identifier: example name: example.org url: https://example.org weight: 30 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma pygmentsUseClasses: true markup: highlight: noClasses: false # anchorLineNos: true # codeFences: true # guessSyntax: true # lineNos: true # style: monokai 可以自己修改裡面的配置
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-09-20 10:09:05 +0800 CST'>September 20, 2025</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;1105 words&nbsp;·&nbsp;Me</footer>
+  <footer class="entry-footer"><span title='2025-09-20 10:09:05 +0800 CST'>September 20, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;727 words&nbsp;·&nbsp;Me</footer>
   <a class="entry-link" aria-label="post link to 我如何建立這個網站的" href="https://thisisjerry7.github.io/posts/how-i-built-this-website/"></a>
 </article>
 
@@ -197,7 +215,7 @@ baseURL: &#34;https://thisisjerry7.github.io/&#34; title: ExampleSite paginate: 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://thisisjerry7.github.io/">jerryyy</a></span> · 
+        <span>&copy; 2025 <a href="https://thisisjerry7.github.io/">Jerryyy</a></span> · 
 
     <span>
         Powered by
